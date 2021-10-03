@@ -1,0 +1,21 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class serv1 extends HttpServlet
+{
+	printWriter pw;
+	public void service(HttpServletRequest reg ,HttpServletResponse res)
+		throws IOException, ServletException
+	{
+
+		pw=res.getWriter();
+		res.setContentType("text/html");
+		
+		pw.printIn("<body bgcolor=#000066 text=white>");
+		
+		pw.printIn("<p>$nbsp;");
+		
+		
+		pw.printIn("<p>&copy; Rupesh-2021");
+	}
